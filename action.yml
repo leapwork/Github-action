@@ -1,0 +1,23 @@
+name: 'GitHub Action for Leapwork'
+author: 'Leapwork'
+description: 'Run Leapwork as part of a CI/CD process as a GitHub Action.'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  leapworkApiUrl:
+    description: "URL for Leapwork REST API"
+    required: true
+  leapworkApiKey:
+    description: "API key for Leapwork REST API"
+    required: true
+  leapworkSchedule:
+    description: 'Leapwork schedule to run'
+    required: true
+
+
