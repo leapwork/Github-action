@@ -32,11 +32,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Reference to Actions must include a version number. Use the newest version of the action, which is ````@v1.5```` at the time of writing.
+Reference to Actions must include a version number. Use the newest version of the action, which is ````@v1.0```` at the time of writing.
 
 Then add environment variables:
 
-* ````LEAPWORK_API_URL```` - your Leapwork controller REST API url, such as ````http://20.224.212.55:9001/api````
+* ````LEAPWORK_API_URL```` - your Leapwork controller REST API url, such as ````http://<controller-ip>:<port>/api````
 * ````LEAPWORK_SCHEDULE```` - the name of your Leapwork schedule
 
 and secret:
