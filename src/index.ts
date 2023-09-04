@@ -13,13 +13,6 @@ const config: LeapworkConfig = {
     leapworkSchedule: core.getInput('leapworkSchedule', { required: true })
 }
 
-// const config: LeapworkConfig = {
-//     GITHUB_TOKEN: '*',
-//     leapworkApiUrl: "http://20.224.212.55:9001/api",
-//     leapworkApiKey: "7kxxv6Q3E80TC2eC",
-//     leapworkSchedule: "babu"
-// }
-
 // Get schedule id from name in config.
 const scheduleId = await getScheduleId(config);
 console.log("Found schedule '" + config.leapworkSchedule + "'.");
